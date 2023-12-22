@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking our survey. This survey collects data that will greatly impact the community around us.</p>
+    <form action="POST" id="survey-form">
+        <hr>
+        <fieldset>
+            <label class="input-labels" for="name" id="name-label">Name<input required id="name" type="text" placeholder="Random Person">
+            </label>
+
+            <label class="input-labels for="email" id="email-label">Email<input required id="email" type="email" placeholder="RandomPerson@gmail.com">
+            </label>
+
+            <label class="input-labels for="number" id="number-label">Age<input required id="number" type="number" min="0" max="120" placeholder="0 - 120">
+            </label>
+
+            <label class="input-labels for="income" id="income-label">Annual Income<input id="income" type="number" min="0" max="999999999" placeholder="Annual Income After Taxes">
+            </label>
+
+            <label class="input-labels for="address" id="address-label">Current Address<input id="address" type="text"  placeholder="123 Humminham Way">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>
+            <select id="dropdown">
+                <option value="0">Married</option>
+                <option value="1">Yes</option>
+                <option value="2">No</option>
+            </select>
+            </label>
+
+            <label class="input-labels inline" for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" value="1" checked /> Personal</label>
+            <label class="input-labels inline" for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" value="2" /> Business</label>
+
+            <label for="information" id="information-label">
+                <textarea id="information" rows="10" cols="60" placeholder="Additional Information">
+            
+            </textarea>
+            </label>
+            <label for="terms-and-conditions">
+                <input value="1" class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="">terms and conditions</a>
+            </label>
+            <label for="additional-conditions">
+                <input value="2" class="inline" id="additional-conditions" type="checkbox" required name="terms-and-conditions" /> I agree to the disclosure of my information.</a>
+            </label>
+        </fieldset>
+                <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
