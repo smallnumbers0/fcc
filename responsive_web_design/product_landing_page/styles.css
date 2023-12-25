@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header-img {
+    width: 100px;
+    height: 100px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background: linear-gradient(#44cc99, #9944bb);
+    }
+}
