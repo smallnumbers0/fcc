@@ -9,6 +9,13 @@ body {
     background-color: #0f0f23;
 }
 
+#main-title {
+    font-size: 36px;
+    color: #0f0f23;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding-top: 10px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -16,7 +23,24 @@ main {
     align-items: center;
     margin: 400px auto;
     gap: 10px;
+    background-color: aquamarine;
+    width: 500px;
+    border-radius: 5px;
+}
+
+#input-container {
+    padding: 20px;
+}
+
+button, input {
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
-
+button:hover {
+    transition: 0.8s;
+    background-color: #0f0f23;
+    color: aquamarine;
+    
+}
