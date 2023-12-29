@@ -42,5 +42,10 @@ button:hover {
     transition: 0.8s;
     background-color: #0f0f23;
     color: aquamarine;
-    
+}
+
+#result {
+    font-size: 22px;
+    color: #0f0f23;
+    padding-bottom: 10px;
 }
